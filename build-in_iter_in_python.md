@@ -1,6 +1,6 @@
-WHEN is build-in `__iter__` called
-WHAT hanppens `__iter__` is called mananully?
-WHAT happens if `__iter__` has additional arguments?
+WHEN is build-in `__iter__` called  
+WHAT hanppens `__iter__` is called mananully?  
+WHAT happens if `__iter__` has additional arguments?  
 
 https://stackoverflow.com/questions/2776829/difference-between-pythons-generators-and-iterators
 # code
