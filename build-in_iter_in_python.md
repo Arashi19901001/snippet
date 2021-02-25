@@ -1,3 +1,6 @@
+when is build-in `__iter__` called, what will hanppen when call `__iter__` mananully?
+what happens if `__iter__` has additional arguments?
+
 https://stackoverflow.com/questions/2776829/difference-between-pythons-generators-and-iterators
 # code
 
@@ -118,6 +121,6 @@ and return an iterator.
 Then came to `for d in it`
 when a python's iterator is first iterated, it calls build-in `__iter__`, and when calling 
 build-in `__iter__`, caller doesn't give any additional arguments, but an defualt value False is set in `def __iter__(self, i=False)`, so python does not raise an Exception and the value of `i` is always False. 
-
+read https://stackoverflow.com/questions/43519285/does-for-loop-call-iter
 
 As for `MyIterable`, function `__iter__` provides a generator, code is hanged after `yield`, and begin with `for j in [1, 2, 3]` in the next loop of `for d in self.__iter__(True)`, so `print("outer iter call")` is only called once and code in `for j in [1, 2, 3]` is called for 3 times. 
