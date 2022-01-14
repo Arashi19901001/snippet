@@ -117,7 +117,7 @@ class B:
             raise IndexError
             return self.list_data[key]
 
-    def __contain__(self, key):
+    def __contains__(self, key):
         if isinstance(key, str):
             return False
         else:
@@ -134,6 +134,6 @@ for i in b:
 """
 @@@@@@@@@@@@@@@@@@@@
 False
-False
+True
 @@@@@@@@@@@@@@@@@@@@
 """
