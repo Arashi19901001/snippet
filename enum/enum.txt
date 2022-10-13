@@ -1,0 +1,16 @@
+dic1: {InspectTag.BUYER_SENTIMENT_ABNORMAL_LOW: 1}
+dic2: {"BUYER_SENTIMENT_ABNORMAL_LOW": 1}
+============================repeat 1000000============================
+0.079: j += 1
+0.283: InspectTag["BUYER_SENTIMENT_ABNORMAL_LOW"]
+0.136: InspectTag.BUYER_SENTIMENT_ABNORMAL_LOW
+0.068: "BUYER_SENTIMENT_ABNORMAL_LOW" in dic1
+0.340: InspectTag.BUYER_SENTIMENT_ABNORMAL_LOW in dic1
+0.519: InspectTag["BUYER_SENTIMENT_ABNORMAL_LOW"] in dic1
+0.053: "BUYER_SENTIMENT_ABNORMAL_LOW" in dic2
+0.357: InspectTag.BUYER_SENTIMENT_ABNORMAL_LOW in dic2
+0.530: InspectTag["BUYER_SENTIMENT_ABNORMAL_LOW"] in dic2
+0.645: str(InspectTag.BUYER_SENTIMENT_ABNORMAL_LOW)
+
+
+enum may cause Efficiency issues in python3.6.8
