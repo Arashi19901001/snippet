@@ -92,13 +92,16 @@ for i in range(5):
 
 class LoopNext:
     def __init__(self):
-        self.iter_ = iter([1, 2, 3])
         self.i = False
+
+    def _iter(self):
+        for i in range(3):
+            yield i
 
     def __iter__(self, i=False):
         print("out iter call")
         time.sleep(1)
-        for j in self.iter_:
+        for j in self._iter():
             self.i = i
             print("iter call")
             print("iter {}".format(i))
@@ -154,5 +157,6 @@ strange_iterator = AnotherStrangeIterator()
 for i in range(2):
     si = next(strange_iterator)
     print(si)
+    print("#")
     for j in si:
         print(j)
