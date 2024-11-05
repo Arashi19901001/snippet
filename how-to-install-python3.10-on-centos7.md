@@ -69,7 +69,7 @@ tar xf Python-3.10.2.tgz
 cd Python-3.10.2
 ```
 * before configure
-  *  for some unkown reason, `--with-openssl=/home/myname/software` doesn't work, you need to edit source file, edit file `Modules/Setup` with vim,  search for keyword `openssl`, uncomment line below，in my case, it start with line 221, save and exit
+  *  for some unkown reason, `--with-openssl=/home/myname/software` doesn't work, you need to edit source file, edit file `Modules/Setup` with vim,  search for keyword `openssl`, uncomment line below，in my case, it start with line 211, save and exit
 
 ```
 OPENSSL=/home/myname/software
