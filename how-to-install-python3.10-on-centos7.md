@@ -88,6 +88,18 @@ _ssl _ssl.c \
 make
 make altinstall
 ```
+* if make altinstall failed, and system keeps tell you 
+```
+./python: error while loading shared libraries: libssl.so.1.1: cannot open shared object file: No such file or directory
+```
+
+try
+```
+sudo bash -c "echo '/home/myname/software/lib64' >> /etc/ld.so.conf"
+sudo ldconfig
+```
+and run ```make altinstall``` again
+
 # test if python3.10 is properly installed
 ```
 /home/myname/software/bin/python3.10
